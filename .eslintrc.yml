@@ -1,0 +1,14 @@
+env:
+  commonjs: true
+  es2020: true
+  node: true
+extends: 'eslint:recommended'
+parserOptions:
+  ecmaVersion: 11
+rules: {
+   indent: ["error", "tab"],
+  no-tabs: ["warn", { allowIndentationTabs: true }],
+  no-underscore-dangle: [0, {}],
+  newline-per-chained-call: [0, { "ignoreChainWithDepth": 2 }],
+  no-plusplus: [0, {}]
+}
