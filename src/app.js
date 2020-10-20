@@ -1,6 +1,5 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const session = require('express-session');
 const passport = require('passport');
 const cors = require('cors');
 const path = require('path')
@@ -14,7 +13,6 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 
-app.use(session({ secret: 'anything' }));
 app.use(passport.initialize());
 app.use(passport.session());
 
